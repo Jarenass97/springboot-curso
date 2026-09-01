@@ -4,6 +4,13 @@ Repositorio dedicado al aprendizaje, práctica e implementación de funcionalida
 
 ---
 
+## 📚 Formación
+
+Este proyecto se realiza como parte del seguimiento del curso:
+* **Udemy:** [Spring Framework 6 & Spring Boot 3 desde cero a experto](https://www.udemy.com/course/spring-framework-5/)
+
+---
+
 ## 🛠️ Tecnologías Utilizadas
 
 * **Java 26**
