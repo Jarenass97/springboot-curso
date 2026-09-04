@@ -8,13 +8,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.jorge.springboot.di.app.springbootdi.models.Product;
-import com.jorge.springboot.di.app.springbootdi.services.ProductService;
+import com.jorge.springboot.di.app.springbootdi.services.IProductService;
 
 @RestController
 @RequestMapping("/api")
 public class SomeController {
 
-    private ProductService service = new ProductService();
+    private IProductService service;
+
+    public SomeController(IProductService service) {
+        this.service = service;
+    }
 
     @RequestMapping(path = "/", method = RequestMethod.GET)
     public List<Product> getProducts() {
