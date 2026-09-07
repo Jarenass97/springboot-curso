@@ -20,7 +20,7 @@ public class SomeController {
         this.service = service;
     }
 
-    @RequestMapping(path = "/", method = RequestMethod.GET)
+    @RequestMapping(path = {"","/"}, method = RequestMethod.GET)
     public List<Product> getProducts() {
         return service.findAll();
     }
